@@ -75,6 +75,6 @@ function placeOrder(cardNumber) {
   for (var i = 0; i < cart.length; i++){
     cart.shift();
   }
-  pay = total();
+  var pay = total();
   return "Your total cost is $" + pay + ", which will be charged to the card " + cardNumber + ".";
 }
